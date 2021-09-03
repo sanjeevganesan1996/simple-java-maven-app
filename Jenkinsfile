@@ -15,6 +15,7 @@ pipeline{
       steps{
         sh 'mvn test'
       }
+    }
      stage("build & SonarQube analysis") {
             agent any
             steps {
